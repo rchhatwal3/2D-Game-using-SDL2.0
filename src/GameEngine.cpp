@@ -62,22 +62,22 @@ void GameEngine::handleInput()
             {
                 case SDLK_UP:
                     //set state machine to MOVE_UP
-                    astronaut->setPlayerState(Astronaut::StateMachine::UP);
+                    astronaut->setPlayerState(1);
                     break;
 
                 case SDLK_DOWN:
                     //set state machine to MOVE_Down  
-                    astronaut->setPlayerState(Astronaut::StateMachine::DOWN);
+                    astronaut->setPlayerState(2);
                     break;
 
                 case SDLK_LEFT:
                     //set state machine to MOVE_Left 
-                    astronaut->setPlayerState(Astronaut::StateMachine::LEFT);
+                    astronaut->setPlayerState(3);
                     break;
 
                 case SDLK_RIGHT:
                     //set state machine to MOVE_Right
-                    astronaut->setPlayerState(Astronaut::StateMachine::RIGHT);
+                    astronaut->setPlayerState(4);
                     break;
 
                 default:
@@ -87,7 +87,7 @@ void GameEngine::handleInput()
         else if (event.type == SDL_KEYUP) 
         {
             //set state machine to idle
-            astronaut->setPlayerState(Astronaut::StateMachine::IDLE);
+            astronaut->setPlayerState(5);
         }
     }
 }

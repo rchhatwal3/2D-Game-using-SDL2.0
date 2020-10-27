@@ -20,7 +20,7 @@ private:
     SDL_RendererFlip objOrientation;
 
 public:
-    enum class StateMachine 
+    enum StateMachine 
     {
         IDLE,
         UP,
@@ -34,7 +34,7 @@ public:
     Astronaut(const char* name, int x, int y, int w, int h, int Max_Width);
     ~Astronaut();
 
-    void setPlayerState(StateMachine new_state);
+    void setPlayerState(int enum_index);
     void updateAstronaut();
     void renderAstronaut(SDL_Renderer* ren);
     void quitObj();

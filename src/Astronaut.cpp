@@ -28,9 +28,31 @@ Astronaut::~Astronaut()
 {
 }
 
-void Astronaut::setPlayerState(StateMachine new_state)
+void Astronaut::setPlayerState(int enum_index)
 {
-    state = new_state;
+    switch (enum_index)
+    {
+    case 1:
+        state = StateMachine::UP;
+        break;
+    
+    case 2:
+        state = StateMachine::DOWN;
+        break;
+
+    case 3:
+        state = StateMachine::LEFT;
+        break;
+
+    case 4:
+        state = StateMachine::RIGHT;
+        break;
+
+    case 5:
+        state = StateMachine::IDLE;
+        break;    
+    }
+    
 }
 
 void Astronaut::updateAstronaut()

@@ -4,7 +4,7 @@
 CC = g++
 
 # set the compiler flags
-CFLAGS = `sdl2-config --libs --cflags` -ggdb3 -O0 -Wall -lSDL2_image -lm -v
+CFLAGS = `sdl2-config --libs --cflags` -ggdb3 -O0 -Wall -lSDL2_image -lm -v -std=c++14
 
 # add header files here
 HDRS = Includes/GameEngine.h Includes/CONSTANTS.h Includes/SDL2_Files.h Includes/Astronaut.h Includes/Asteroid.h Includes/Background.h

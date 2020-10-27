@@ -20,7 +20,7 @@ private:
     SDL_RendererFlip objOrientation;
 
 public:
-    enum StateMachine 
+    enum class StateMachine 
     {
         IDLE,
         UP,

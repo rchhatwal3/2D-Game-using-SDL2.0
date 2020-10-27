@@ -1,3 +1,9 @@
+/***********************
+ *Ramneek Chhatwal
+ *rchhatw
+ *Assignment 3
+ **********************/
+
 #ifndef GLOBALS_H
 #define GLOBALS_H
 

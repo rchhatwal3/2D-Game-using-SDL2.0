@@ -1,3 +1,9 @@
+/***********************
+ *Ramneek Chhatwal
+ *rchhatw
+ *Assignment 3
+ **********************/
+
 #include "../Includes/GameEngine.h"
 
 GameEngine::GameEngine(std::string windowName, int user_FPS)

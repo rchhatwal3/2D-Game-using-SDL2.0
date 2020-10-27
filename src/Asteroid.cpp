@@ -1,3 +1,9 @@
+/***********************
+ *Ramneek Chhatwal
+ *rchhatw
+ *Assignment 3
+ **********************/
+
 #include "../Includes/Asteroid.h"
 
 Asteroid::Asteroid(const char* name, int x, int y, int w, int h, int Max_Width)

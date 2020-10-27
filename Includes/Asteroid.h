@@ -1,3 +1,9 @@
+/***********************
+ *Ramneek Chhatwal
+ *rchhatw
+ *Assignment 3
+ **********************/
+
 #ifndef ASTEROID_H
 #define ASTEROID_H
 

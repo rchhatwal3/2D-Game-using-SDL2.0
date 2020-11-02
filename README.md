@@ -1,3 +1,9 @@
+**In Order to Run Game**
+These SDL2.0 Library files must be downloaded to your path:
+  * SDL2/SDL.h
+  * SDL2/SDL_image.h
+  * SDL2/SDL_timer.h
+
 **Helper Classes:**
 
   * Background.cpp

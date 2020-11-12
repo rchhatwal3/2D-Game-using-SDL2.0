@@ -1,8 +1,8 @@
-/***********************
+/**********************************
  *Ramneek Chhatwal
  *rchhatw
- *Assignment 3
- **********************/
+ *Moontian - Escape from the Planet
+ *********************************/
 
 #include "../Includes/GameEngine.h"
 #include "../Includes/CONSTANTS.h"
@@ -21,9 +21,10 @@ int GAME_BOUND_LOWER_Y = 0;
 int main(int argc, char const *argv[])
 {
     Uint32 start_time, this_duration;
+    int desiredFPS = 20;
 
-    // params are (Screen Width, Screen Height, FPS, Screen Width, Screen Height)
-    GameEngine* engine = new GameEngine("my_game", 20);
+    // params are ("Screen name, desiredFPS")
+    GameEngine* engine = new GameEngine("Moontian - Escape from the Planet", desiredFPS);
 
     engine->init();
 

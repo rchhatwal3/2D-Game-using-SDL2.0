@@ -7,16 +7,16 @@ CC = g++
 CFLAGS = `sdl2-config --libs --cflags` -ggdb3 -O0 -Wall -lSDL2_image -lm -v -std=c++14
 
 # add header files here
-HDRS = Includes/GameEngine.h Includes/CONSTANTS.h Includes/SDL2_Files.h Includes/Astronaut.h Includes/Asteroid.h Includes/Background.h
+HDRS = Includes/GameEngine.h Includes/CONSTANTS.h Includes/SDL2_Files.h Includes/Astronaut.h Includes/Asteroid.h Includes/Background.h Includes/Particle.h
 
 # add source files here
-SRCS = src/main.cpp  src/GameEngine.cpp src/Astronaut.cpp src/Asteroid.cpp src/Background.cpp
+SRCS = src/main.cpp  src/GameEngine.cpp src/Astronaut.cpp src/Asteroid.cpp src/Background.cpp src/Particle.cpp
 
 # generate names of object files
 OBJS = $(SRCS:.cpp=.o)
 
 # name of executable
-EXEC = my_game
+EXEC = Moontian_Escape_from_the_Planet
 
 # default recipe
 all: $(EXEC)

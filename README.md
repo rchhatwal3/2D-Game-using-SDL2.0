@@ -9,13 +9,20 @@ These SDL2.0 Library files must be downloaded to your path:
   * Background.cpp
   * Asteroid.cpp
   * Astronaut.cpp
+  * Particle.cpp
+
+**Collision Handling Method:**
+  * I am using the box collider method to check for collisions.
+
+**Collision Response:**
+  * When a collision happens between the astronaut (PC) and an asteroid, the astronaut gets vaporized and the asteroid breaks into pieces and disappears.
 
 
 **Deployment:**
 
   * make clean to get rid of the .o and executable files.
   * make to compile
-  * ./my_game to run the game
+  * ./Moontian_Escape_from_the_Planet to run the game
 
 **How to Play:**
 

@@ -1,8 +1,8 @@
-/***********************
+/**********************************
  *Ramneek Chhatwal
  *rchhatw
- *Assignment 3
- **********************/
+ *Moontian - Escape from the Planet
+ *********************************/
 
 #ifndef ASTRONAUT_H
 #define ASTRONAUT_H
@@ -32,7 +32,8 @@ public:
         UP,
         DOWN,
         RIGHT,
-        LEFT
+        LEFT,
+        DEAD
     };
 
     StateMachine state; 
@@ -41,6 +42,7 @@ public:
     ~Astronaut();
 
     void setPlayerState(int enum_index);
+    void setPlayerState(StateMachine value);
     void updateAstronaut();
     void renderAstronaut(SDL_Renderer* ren);
     void quitObj();
@@ -51,7 +53,7 @@ public:
     int obj_get_y_pos();
     void obj_set_y_pos(int pos);
 
-    SDL_Rect& get_ScreenRect();
+    SDL_Rect& getScreenRect();
     
 };
 

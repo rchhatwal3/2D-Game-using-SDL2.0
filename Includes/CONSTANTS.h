@@ -1,8 +1,8 @@
-/***********************
+/**********************************
  *Ramneek Chhatwal
  *rchhatw
- *Assignment 3
- **********************/
+ *Moontian - Escape from the Planet
+ *********************************/
 
 #ifndef GLOBALS_H
 #define GLOBALS_H

@@ -1,8 +1,8 @@
-/***********************
+/**********************************
  *Ramneek Chhatwal
  *rchhatw
- *Assignment 3
- **********************/
+ *Moontian - Escape from the Planet
+ *********************************/
 
 #ifndef ASTEROID_H
 #define ASTEROID_H
@@ -29,6 +29,7 @@ public:
 
     void updateAsteroid();
     void renderAsteroid(SDL_Renderer* ren);
+    SDL_Rect& getScreenRect();
     void quitObj();
 };
 

@@ -1,8 +1,8 @@
-/***********************
+/**********************************
  *Ramneek Chhatwal
  *rchhatw
- *Assignment 3
- **********************/
+ *Moontian - Escape from the Planet
+ *********************************/
 
 #include "../Includes/Asteroid.h"
 
@@ -55,4 +55,9 @@ void Asteroid::quitObj()
 {
     SDL_FreeSurface(ObjSurface);
     delete(this);
+}
+
+SDL_Rect& Asteroid::getScreenRect()
+{
+    return obj_TargetRect;
 }

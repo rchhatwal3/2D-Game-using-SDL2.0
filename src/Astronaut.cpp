@@ -1,8 +1,8 @@
-/***********************
+/**********************************
  *Ramneek Chhatwal
  *rchhatw
- *Assignment 3
- **********************/
+ *Moontian - Escape from the Planet
+ *********************************/
 
 #include "../Includes/Astronaut.h"
 
@@ -58,7 +58,11 @@ void Astronaut::setPlayerState(int enum_index)
         state = StateMachine::IDLE;
         break;    
     }
-    
+}
+
+void Astronaut::setPlayerState(StateMachine value)
+{
+   state = value;
 }
 
 void Astronaut::updateAstronaut()
@@ -128,10 +132,13 @@ void Astronaut::updateAstronaut()
 
         break;
 
-    default: //IDLE CASE
+    case StateMachine::IDLE: //IDLE CASE
         objOrientation = SDL_FLIP_NONE;
         angle = 0;
         obj_SpriteRect.x = 0;
+        break;
+
+    case StateMachine::DEAD:
         break;
     }
 
@@ -152,4 +159,9 @@ void Astronaut::quitObj()
 {
     SDL_FreeSurface(ObjSurface);
     delete(this);
+}
+
+SDL_Rect& Astronaut::getScreenRect()
+{
+    return obj_TargetRect;
 }

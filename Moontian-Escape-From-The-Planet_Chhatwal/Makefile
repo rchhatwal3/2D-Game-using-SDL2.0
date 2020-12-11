@@ -4,13 +4,13 @@
 CC = g++
 
 # set the compiler flags
-CFLAGS = `sdl2-config --libs --cflags` -ggdb3 -O0 -Wall -lSDL2_image -lm -v -std=c++14
+CFLAGS = `sdl2-config --libs --cflags` -ggdb3 -O0 -Wall -lSDL2_image -lSDL2_ttf -lm -v -std=c++14
 
 # add header files here
-HDRS = Includes/GameEngine.h Includes/CONSTANTS.h Includes/SDL2_Files.h Includes/Astronaut.h Includes/Asteroid.h Includes/Background.h Includes/Particle.h
+HDRS = Includes/GameEngine.h Includes/CONSTANTS.h Includes/SDL2_Files.h Includes/Astronaut.h Includes/Asteroid.h Includes/Background.h Includes/Particle.h Includes/TextManager.h Includes/Rocket.h Includes/StartScreen.h Includes/EndScreen.h
 
 # add source files here
-SRCS = src/main.cpp  src/GameEngine.cpp src/Astronaut.cpp src/Asteroid.cpp src/Background.cpp src/Particle.cpp
+SRCS = src/main.cpp  src/GameEngine.cpp src/Astronaut.cpp src/Asteroid.cpp src/Background.cpp src/Particle.cpp src/TextManager.cpp src/Rocket.cpp src/StartScreen.cpp src/EndScreen.cpp
 
 # generate names of object files
 OBJS = $(SRCS:.cpp=.o)

@@ -38,10 +38,15 @@ void Asteroid::updateAsteroid()
     if (obj_SpriteRect.x + obj_SpriteRect.w > spriteImageWidth) obj_SpriteRect.x = 0;
     else obj_SpriteRect.x+=obj_SpriteRect.w; 
 
-    if ((x_pos - ASTEROID_VEL) < GAME_BOUND_LEFT_X) x_pos = SCREEN_WIDTH;
+    if ((x_pos - ASTEROID_VEL) < GAME_BOUND_LEFT_X)
+    {
+        x_pos = SCREEN_WIDTH;
+        y_pos = rand() % SCREEN_HEIGHT + 1;
+    } 
     else x_pos -= ASTEROID_VEL;
 
     obj_TargetRect.x = x_pos;
+    obj_TargetRect.y = y_pos;
 }
 
 void Asteroid::renderAsteroid(SDL_Renderer* ren)

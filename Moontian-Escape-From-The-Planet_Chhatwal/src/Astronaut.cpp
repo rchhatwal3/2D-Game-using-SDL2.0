@@ -8,6 +8,8 @@
 
 Astronaut::Astronaut(const char* name, int x, int y, int w, int h, int Max_Width)
 {
+    srand(5);
+
     x_pos = x;
     y_pos = y;
     width = w;
@@ -20,7 +22,7 @@ Astronaut::Astronaut(const char* name, int x, int y, int w, int h, int Max_Width
     obj_TargetRect.h = height;
     obj_TargetRect.w = width;
     obj_TargetRect.x = x_pos;
-    obj_TargetRect.y = y_pos;
+    obj_TargetRect.y = rand() % SCREEN_HEIGHT + 1;
 
     obj_SpriteRect.h = height;
     obj_SpriteRect.w = width;

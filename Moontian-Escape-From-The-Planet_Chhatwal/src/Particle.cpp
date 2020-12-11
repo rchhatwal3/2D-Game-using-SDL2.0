@@ -141,8 +141,8 @@ void ParticleEmitter::emitter_init(const char* name, SDL_Renderer* renderer, int
     for (int i = 0; i < MAX_PARTICLES; i++)
     {
         particles[i].particle_init(name, renderer, startX, startY, width, height);
-        particles[i].particle_set_x_vel(3.0 - (rand() % 20) / 10.0);
-        particles[i].particle_set_y_vel(0 - (rand() % 20) / 10.0);
+        particles[i].particle_set_x_vel(ASTEROID_VEL - ((rand() % 30) - 30)/ 2.0);
+        particles[i].particle_set_y_vel(ASTEROID_VEL - ((rand() % 30) - 30) / 2.0);
         particles[i].set_particle_lifetime(10 + (rand() % 10));
     }
 }

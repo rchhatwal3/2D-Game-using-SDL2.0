@@ -1,5 +1,10 @@
-**Background and Objective**
-You are controlling an astronaut that lives on the Moon, but goes around to differnt planets.  On one of the planets, you had a rough landing and your rocket ship broke into many pieces.  You're mission is to retrieve all of the rocket ship pieces without being struck by a flying asteroid in order to repair your ship and get off the planet.
+**Background**
+
+You are controlling an astronaut that lives on the Moon, but goes around to different planets.  On one of the planets, you had a rough landing and your rocket ship broke into many pieces.  You're mission is to retrieve all of the rocket ship pieces without being struck by a flying asteroid in order to repair your ship and get off the planet.
+
+**Clemson Class Objective**
+
+I made this game as part of my Clemson class CPSC 4160 - 2-D Game Engine Design, taught by Dr. Zordan.  The focus of this class was to learn the basics of game development by using SDL2.0.  This game was an overall assessment of what I had learned throughout the class
 
 **How to Play:**
 

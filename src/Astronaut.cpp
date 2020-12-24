@@ -82,7 +82,7 @@ void Astronaut::updateAstronaut()
 
         else y_pos = GAME_BOUND_LOWER_Y;
 
-        if (obj_SpriteRect.x + obj_SpriteRect.w > spriteImageWidth) obj_SpriteRect.x = 0;
+        if (obj_SpriteRect.x + obj_SpriteRect.w > spriteImageWidth - 1) obj_SpriteRect.x = 0;
         else obj_SpriteRect.x+=obj_SpriteRect.w; 
         break;
     
@@ -97,7 +97,7 @@ void Astronaut::updateAstronaut()
 
         else y_pos = GAME_BOUND_UPPER_Y;
 
-        if (obj_SpriteRect.x + obj_SpriteRect.w > spriteImageWidth) obj_SpriteRect.x = 0;
+        if (obj_SpriteRect.x + obj_SpriteRect.w > spriteImageWidth - 1) obj_SpriteRect.x = 0;
         else obj_SpriteRect.x+=obj_SpriteRect.w; 
 
         break;
@@ -113,7 +113,7 @@ void Astronaut::updateAstronaut()
 
         else x_pos = GAME_BOUND_LEFT_X;
 
-        if (obj_SpriteRect.x + obj_SpriteRect.w > spriteImageWidth) obj_SpriteRect.x = 0;
+        if (obj_SpriteRect.x + obj_SpriteRect.w > spriteImageWidth - 1) obj_SpriteRect.x = 0;
         else obj_SpriteRect.x+=obj_SpriteRect.w; 
 
         break;
@@ -129,7 +129,7 @@ void Astronaut::updateAstronaut()
 
         else x_pos = GAME_BOUND_RIGHT_X;
 
-        if (obj_SpriteRect.x + obj_SpriteRect.w > spriteImageWidth) obj_SpriteRect.x = 0;
+        if (obj_SpriteRect.x + obj_SpriteRect.w > spriteImageWidth - 1) obj_SpriteRect.x = 0;
         else obj_SpriteRect.x+=obj_SpriteRect.w; 
 
         break;
